@@ -6,3 +6,5 @@ Thanks to niftylettuce for making the email-sending package I use. It's pretty m
 If you just want to send out a bunch of personalized emails, this is a small little thing to make it even easier, without using the normal proprietary stuff or the free tools that already redirect to spam.
 
 This can work with either Gmail or Outlook so far, including with GSuite and Outlook's equivalent feature (I tested it), just follow the respective sub-READMEs.
+
+You provide your own email address as well. I'm sure there are better and more common ways to do it, but this is how I usually do it.

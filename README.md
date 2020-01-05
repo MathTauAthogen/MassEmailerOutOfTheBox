@@ -1,10 +1,17 @@
-# MassEmailerOutOfTheBox
-I've been using this code to send out mass emails often, and thought I'd put it online.
-
-Thanks to niftylettuce for making the email-sending package I use. It's pretty much a slightly packaged version of their code, just slightly fleshed out for your garden-variety spamming needs.
-
-If you just want to send out a bunch of personalized emails, this is a small little thing to make it even easier, without using the normal proprietary stuff or the free tools that already redirect to spam.
-
-This can work with either Gmail or Outlook so far, including with GSuite and Outlook's equivalent feature (I tested it), just follow the respective sub-READMEs.
-
-You provide your own email address as well. I'm sure there are better and more common ways to do it, but this is how I usually do it.
+#Usage Instructions
+##Configuration
+1. Go into the email/initial folder, and edit html.pug and subject.pug to whatever you want. Alternatively, add your own template folder!
+2. cd .. twice to return to the root directory.
+3. vim emailer.js
+4. There are comments on the lines that need to be configured. Do that, with your email username, password, and your real name. Also, set the name of the template you're using. Some other options are also provided.
+5. :x
+6. vim emaillist.txt
+7. Enter, one email per line, the email addresses from the spreadsheet. Simply selecting in the spreadsheet, copying, and pasting will do the job.
+8. :x
+9. vim namelist.txt
+10. Enter, one name per line, the values for the [REP] variable.
+11. :x
+12. node emailer.js
+13. ???
+14. Profit
+15. You will recieve replies to [youremail]+[folderName]@[domainname].[tld], which allows you to filter this into a folder in your email provider. However, this will not be the main "from:" email displayed to the companies you are contacting.
